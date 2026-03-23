@@ -1,0 +1,108 @@
+.education-section { background: var(--bg); }
+
+.edu-grid {
+  display: grid;
+  grid-template-columns: 1.5fr 1fr 1fr;
+  gap: 1.5rem;
+  align-items: start;
+}
+
+.edu-card {
+  padding: 1.75rem;
+}
+.edu-card--primary {
+  border-color: rgba(124,106,247,0.35);
+  background: rgba(124,106,247,0.04);
+  grid-row: span 1;
+}
+
+.edu-card-top {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-bottom: 1rem;
+}
+.edu-icon { font-size: 1.8rem; }
+.edu-status {
+  font-family: var(--mono);
+  font-size: 0.7rem;
+  padding: 0.2rem 0.6rem;
+  border-radius: 100px;
+}
+.edu-status--ongoing {
+  background: rgba(124,106,247,0.12);
+  color: var(--accent);
+  border: 1px solid rgba(124,106,247,0.25);
+}
+.edu-status--done {
+  background: rgba(100,116,139,0.12);
+  color: var(--muted);
+  border: 1px solid var(--border);
+}
+
+.edu-degree {
+  font-size: 1rem;
+  font-weight: 700;
+  color: var(--text);
+  margin-bottom: 0.3rem;
+  line-height: 1.3;
+}
+.edu-institution {
+  font-size: 0.82rem;
+  color: var(--muted);
+  font-family: var(--mono);
+  margin-bottom: 0.8rem;
+}
+
+.edu-meta {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 0.5rem;
+  margin-bottom: 1rem;
+  flex-wrap: wrap;
+}
+.edu-period {
+  display: flex;
+  align-items: center;
+  gap: 0.35rem;
+  font-size: 0.78rem;
+  color: var(--muted);
+  font-family: var(--mono);
+}
+.edu-score {
+  background: rgba(247,192,106,0.1);
+  color: var(--accent2);
+  border-color: rgba(247,192,106,0.25);
+}
+
+.edu-highlights {
+  display: flex;
+  flex-direction: column;
+  gap: 0.45rem;
+  border-top: 1px solid var(--border);
+  padding-top: 0.9rem;
+}
+.edu-highlights li {
+  display: flex;
+  align-items: flex-start;
+  gap: 0.5rem;
+  font-size: 0.82rem;
+  color: var(--text-dim);
+  line-height: 1.5;
+}
+.edu-dot {
+  width: 4px;
+  height: 4px;
+  border-radius: 50%;
+  background: var(--accent);
+  flex-shrink: 0;
+  margin-top: 6px;
+}
+
+@media (max-width: 900px) {
+  .edu-grid { grid-template-columns: 1fr 1fr; }
+}
+@media (max-width: 600px) {
+  .edu-grid { grid-template-columns: 1fr; }
+}

@@ -1,0 +1,148 @@
+.experience-section { background: var(--bg2); }
+
+.timeline {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  gap: 0;
+}
+
+.timeline-item {
+  position: relative;
+  padding-left: 2.5rem;
+  padding-bottom: 2rem;
+}
+
+.timeline-dot {
+  position: absolute;
+  left: 0;
+  top: 1.6rem;
+  width: 12px;
+  height: 12px;
+  border-radius: 50%;
+  background: var(--accent);
+  border: 2px solid var(--bg2);
+  box-shadow: 0 0 0 3px rgba(124,106,247,0.3);
+  z-index: 1;
+}
+.timeline-dot--future {
+  background: var(--border);
+  box-shadow: none;
+}
+
+.timeline-line {
+  position: absolute;
+  left: 5px;
+  top: 2.4rem;
+  bottom: 0;
+  width: 2px;
+  background: linear-gradient(to bottom, var(--accent), transparent);
+}
+.timeline-item:last-child .timeline-line { display: none; }
+
+.experience-card {
+  padding: 1.75rem;
+}
+
+.exp-header {
+  display: flex;
+  align-items: flex-start;
+  justify-content: space-between;
+  gap: 1rem;
+  margin-bottom: 1rem;
+  flex-wrap: wrap;
+}
+.exp-header-left {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+}
+.exp-company-icon {
+  width: 46px;
+  height: 46px;
+  border-radius: 10px;
+  background: linear-gradient(135deg, var(--accent), #a78bfa);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-weight: 800;
+  font-size: 0.8rem;
+  color: #fff;
+  flex-shrink: 0;
+}
+.exp-role {
+  font-size: 1.1rem;
+  font-weight: 700;
+  color: var(--text);
+  margin-bottom: 0.25rem;
+}
+.exp-company {
+  font-size: 0.82rem;
+  color: var(--muted);
+  font-family: var(--mono);
+}
+
+.exp-header-right {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+  gap: 0.4rem;
+}
+.exp-period {
+  font-family: var(--mono);
+  font-size: 0.75rem;
+  color: var(--muted);
+}
+.exp-badge {
+  font-family: var(--mono);
+  font-size: 0.7rem;
+  padding: 0.2rem 0.6rem;
+  border-radius: 100px;
+}
+.exp-badge--green {
+  background: rgba(80,250,123,0.1);
+  color: var(--green);
+  border: 1px solid rgba(80,250,123,0.2);
+}
+
+.exp-description {
+  font-size: 0.92rem;
+  color: var(--text-dim);
+  line-height: 1.7;
+  margin-bottom: 1rem;
+}
+
+.exp-bullets {
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+}
+.exp-bullets li {
+  display: flex;
+  align-items: flex-start;
+  gap: 0.6rem;
+  font-size: 0.87rem;
+  color: var(--text-dim);
+}
+.exp-bullets svg { flex-shrink: 0; margin-top: 2px; }
+
+/* Future card */
+.experience-card--future {
+  background: rgba(124,106,247,0.04);
+  border-color: rgba(124,106,247,0.2);
+  border-style: dashed;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 1rem;
+  flex-wrap: wrap;
+}
+.future-text {
+  font-size: 0.95rem;
+  color: var(--text-dim);
+}
+
+@media (max-width: 600px) {
+  .exp-header { flex-direction: column; }
+  .exp-header-right { align-items: flex-start; }
+}

@@ -1,0 +1,14 @@
+.app {
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+}
+
+main {
+  flex: 1;
+}
+
+/* Divider line between sections */
+.section + .section {
+  border-top: 1px solid var(--border);
+}
