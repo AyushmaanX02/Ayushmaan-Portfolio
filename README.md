@@ -1,6 +1,6 @@
 # Ayushmaan Kapoor — Portfolio
 
-A modern, dark-themed React portfolio customized from the `developer-portfolio` template structure.
+A modern, dark-themed React portfolio.
 
 ## 🚀 Getting Started
 
